@@ -12,12 +12,12 @@ title: EXPOSITION
             <div class="postArticle-wrapper">
               <article class="postArticle postArticle--short">
                 {% if post.image.feature %}
-                  <a href="{{ post.url }}">
-                    <div class="postArticle-image desaturate" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')">
+                  <a href="{{ post.url | relative_url}}">
+                    <div class="postArticle-image desaturate" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img | relative_url }}')">
                     </div>
                   </a>
                 {% else %}
-                <a href="{{ post.url }}">
+                <a href="{{ post.url | relative_url}}">
                   <div class="postArticle-image" style="background-image:url('{{site.baseurl}}assets/images/logo-black.svg')">
                   </div>
                 </a>

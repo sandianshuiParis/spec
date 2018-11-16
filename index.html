@@ -4,10 +4,15 @@ layout: landing
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | markdownify }}</p>
-							<ul class="actions">
-								<li><a href="#" class="button special">Activate</a></li>
+							<h2 >{{ site.title }}</h2>					
+							<ul class="actions">					
+							 {% for my_page in site.pages %}
+					            {% if my_page.title == 'EXPOSITION'%}
+					            	<li><a href="{{my_page.url | relative_url }}" class="button custom">EXPOSITION</a></li>
+					         	{% endif %}
+				             {% endfor %}
+							
+								<!--<li><a href="{{site.pages | relative_url }}" class="button special">{{my_page.url}}</a></li>-->
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -17,10 +22,14 @@ layout: landing
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>D'origine</h2>
+								<p>La voie donne vie en Un <br>
+									Un donne vie en Deux <br>
+									Deux donne vie en Trois<br>
+									Trois donne vie<br>
+									aux Dix mille êtres<br>
+								</p>
+								<div class="image"><img src="images/sandianshui/daodejing.png" alt="" /></div><div class="content">
 							</header>
 							<ul class="icons major">
 								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
@@ -33,24 +42,27 @@ layout: landing
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/sandianshui/quisommesnous.png" alt="" /></div><div class="content">
+								<h2>Qui sommes-nous ?<br /> </h2>		
+								<p>Nous sommes le premier club de lecture chinois pour les enfants en Europe.</p>						
+								<p>San Dian Shui est située au centre de Paris, dans le triangle d’or entre l’Opéra Garnier, le Musée du Louvre et la place Vendôme. Un quartier riche de sa culture et de son histoire.</p>
+								<p>Notre club propose plus de 5000 ouvrages (albums illustrés, contes, bandes dessinées) pour les enfants âgés de 0 à 12 ans. Tous nos livres sont en version chinoise. De nombreux ateliers de lecture, de théâtre, d’arts plastiques et des cours de mandarin sont proposés aux enfants tout au long de l’année. Ces ateliers/cours sont tous conçus, développés et mis en pratique par nos soins et s’adaptent à l’âge de l’enfant.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/sandianshui/quisommesnous2.png" alt="" /></div><div class="content">
+								<p>Dans un environnement 100% sinophone, les enfants s’immergent avec plaisir dans la langue chinoise et dans toutes ses composantes et ses aspects. Les parents apprécient beaucoup notre nouvelle méthode d’apprentissage. Deux ans seulement après son ouverture, San Dian Shui devient un lieu éducatif et interactif apprécié et reconnu pour des milliers de familles d’origines chinoises et franco-chinoises en Europe.</p>
+								<p>Nous sommes aussi la première société française d’origine chinoise en Europe ayant réussi à créer des franchises dans le domaine de l’éducation et de la culture. Vingt-huit associations en France, en Europe et dans le monde sont affiliées à notre marque et proposent des ateliers éducatifs aux enfants.</p>
+								<p>Grâce à ce réseau ainsi créé, de plus en plus de parents, étant membres de notre association, interviennent même dans les écoles de leurs enfants afin de présenter la culture chinoise, ses traditions et ses fêtes populaires.</p>
+
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/sandianshui/projet.png" alt="" /></div><div class="content">
+								<h2>Projet : lecture aux enfants dans ma ville<br /></h2>
+								<h4>Nous lisons d’abord aux enfants pour leur donner le goût de lire eux-mêmes plus tard. </h4>
+								<p>Début 2018, pour que plus de familles puissent profiter de nos ateliers de lecture en groupe, nous avons lancé le projet: Lecture aux enfants dans ma ville . Nous recherchons des associations désireuses de nous représenter dans les différentes villes afin d’organiser des lectures en chinois aux enfants. Six mois seulement après le lancement de ce projet ambitieux, nous avons déjà engagés 29 associations éducatives dont 26 en France. Ce chiffre continue de s’accroître via nos représentants qui vivent en Europe (en Allemagne, au Pays–bas, en Angleterre) et sur les autres continents (États-Unis, Canada, Australie, etc.</p>
+								<p>Tous nos représentants sont formés à notre méthodologie d’apprentissage que ce soit pour le choix d’ouvrage destinés aux enfants, la préparation d’une lecture en groupe, ou les aspects artistiques de l’écriture chinoise. Depuis mars 2018, il y a eu près d’une centaine d’animations de lecture en chinois proposées aux enfants dans les différentes villes en France et en Europe. Mille familles ont été associées à ce projet.</p> 
 							</div>
 						</section>
 					</section>
@@ -59,22 +71,31 @@ layout: landing
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>Une Bibliothèque mobile et partagée pour les enfants</h2>
+								<p>Avec nos représentants en France, San Dian Shui propose également une bibliothèque privée itinérante d’ouvrages en chinois. Objectif ? Mettre plus en valeur ces ouvrages et aider les parents sur le choix et l’achat depuis la France des livres chinois. Nous sélectionnons par ailleurs les meilleurs ouvrages pour chaque représentant et nous proposons un service de « Prêt » aux adhérents. La bibliothèque renouvèle régulièrement ses collections. Les enfants et leurs parents peuvent y découvrir à la fois des livres classiques en chinois mais aussi des plus récents. De même, nous incitons toutes les familles à l’esprit de partage en présentant les livres « dormants ».</p>
 							</header>
 							<ul class="features">
 								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>Paris</h3>
+									<div class="spotlight image"><img src="images/sandianshui/paris.png" alt="" /></div>
 								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								<li class="icon fa-paper-plane-o">
+									<h3>Ile de France</h3>
+									<div class="spotlight image"><img src="images/sandianshui/iledefrance.png" alt="" /></div>
 								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								<li class="icon fa-paper-plane-o">
+									<h3>En Province</h3>									 
+									<p align="center">Les Petits Bambous <b>Bordeaux</b></p>
+									<p align="center">Centre Franco-chinois de Caen <b>Caen</b></p>
+									<p align="center">Huayuan, Jardin de Chine <b>Nantes</b></p>
+
+								</li>
+								<li class="icon fa-paper-plane-o">
+									<h3>Dans le monde</h3>									 
+									<p align="center">Qi He <b>Arnhem Pays-Bas</b></p>
+									<p align="center">Darley Mandarin School <b>Royaume-Uni</b></p>
+									<p align="center">Totto <b>Toronto Canada</b></p>
+
 								</li>
 								<li class="icon fa-headphones">
 									<h3>Mauris Imperdiet</h3>
@@ -85,8 +106,22 @@ layout: landing
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>Nous contacter</h3>
+									<p>
+										Adresse: </br> 11 Rue du Marché Saint-Honoré 75001 Paris </br> 
+										Transport:</br> 
+										<p align="center">RER A - Auber Opéra (6min)</br>   
+										Ligne 3/7/8  </br> 
+										Opéra (6min)  </br> 
+										Ligne 7/14   </br> 
+										Pyramides (5min)  </br> 
+										Ligne 1  </br>
+										Tuileries (3min)</br></p>
+										E-mail:</br>   
+										sandianshuiparis@gmail.com</br>   
+										Tél:</br>   
+										+33 7 83 01 00 17</br> 
+									</p>
 								</li>
 							</ul>
 						</div>

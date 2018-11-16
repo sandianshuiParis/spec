@@ -4,9 +4,9 @@
 # Site settings
 title: 三点水
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
+  San Dian Shui (Trois Gouttes d’Eau)      
+  Un club de lecture chinois pour les enfants  
+  [WE CHAT](http://html5up.net)
 owner: Your Name # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: your-email@domain.com
@@ -53,10 +53,10 @@ social:
   #tripadvisor:
   #amazon:
 
-baseurl_posts_img:   'assets/images/posts/'
-baseurl_featured_img: 'assets/images/hero/'
-baseurl_featured_thumbnail: 'assets/images/thumbnail/'
-baseurl_javascripts: 'assets/javascripts/'
+baseurl_posts_img:   '/assets/images/posts/'
+baseurl_featured_img: '/assets/images/hero/'
+baseurl_featured_thumbnail: '/assets/images/thumbnail/'
+baseurl_javascripts: '/assets/javascripts/'
 icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
 disqus:              disqus_shortname # get it on https://disqus.com/admin/
 

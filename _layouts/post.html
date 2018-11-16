@@ -2,18 +2,68 @@
 layout: page
 ---
 
+
 <article class="postWrapper">
   <section class="section--first is-darkBackgrounded u-table">
-    <div class="section-backgroundImage">                  
+    <div class="section-backgroundImage">
+
       {% if page.image.feature %}
-        <img class="post-featuredImage" src="{{ page.image.feature | prepend: site.baseurl_featured_img}}" style="
+        <h1>{{ page.image.feature | prepend: site.baseurl_featured_img | relative_url }}</h1>        
+        <img class="post-featuredImage" src="{{ page.image.feature | prepend: site.baseurl_featured_img | absolute_url }}" style="
         {% if page.image.topPosition %}
           top:{{ page.image.topPosition }};
         {% endif %}
         " alt="">
       {% endif %}
-    </div>    
+
+    </div>
+    <div class="section-gradient
+    {% if page.bgGradientOpacity == "darker" %}
+      section-gradient--darker
+    {% elsif page.bgGradientOpacity == "lighter" %}
+      section-gradient--lighter
+    {% endif %}
+    "></div>
+    <div class="section-title is-darkBackgrounded u-tableCell u-verticalAlignMiddle">
+      <div class="container">
+        <h2 style="color:blue">{{ page.title }}</h2>
+        <div class="postMeta-wrapper">
+          <ul class="postMeta">
+            <li class="postMeta-datetime">
+              <time datetime="{{ page.date }}">
+                {{ page.date | date_to_string }}
+              </time>
+            </li>
+            <li class="postMeta-author">
+              By {{ site.author.name }}
+            </li>
+            <li class="postMeta-tags">
+              {{ page.categories }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
-  </footer>
+  <section class="section--last">
+    <div class="container container--content">
+      <div class="content-body">
+
+        {{ content }}
+
+      </div>
+    </div>
+    <hr class="u-clearHr"/>
+    <hr class="u-clearHr"/>
+    <hr/>
+    <div class="container container--content">
+      <div class="content-body">
+        {% include subscribe.html %}
+        {% include comments.html %}
+      </div>
+    </div>
+  </section>
+ 
 </article>
 
+{% include modal.html %}
