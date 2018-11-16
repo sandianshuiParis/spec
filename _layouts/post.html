@@ -7,8 +7,7 @@ layout: page
   <section class="section--first is-darkBackgrounded u-table">
     <div class="section-backgroundImage">
 
-      {% if page.image.feature %}
-        <h1>{{ page.image.feature | prepend: site.baseurl_featured_img | relative_url }}</h1>        
+      {% if page.image.feature %}       
         <img class="post-featuredImage" src="{{ page.image.feature | prepend: site.baseurl_featured_img | absolute_url }}" style="
         {% if page.image.topPosition %}
           top:{{ page.image.topPosition }};

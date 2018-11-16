@@ -1678,14 +1678,15 @@ body {
   position: absolute;
   display: block;
   width: 100%;
-  height:auto;
+  height: 100%
   background: #fff;
   top: 0;
   z-index: -200;
   overflow: hidden;
+  opacity: 1;
 }
 
-.section-backgroundImage .post-featuredImage {
+.section-backgroundImage .post-featuredImages {
   min-width: 100%;
   min-height: 28.5rem;
   width: 2000px;
@@ -1696,7 +1697,30 @@ body {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 1;
-
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  -webkit-transition-property: opacity, left, top, width;
+  -webkit-transition-duration: 1s, 0.1s, 0.1s, 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-property: opacity, left, top, width;
+  -moz-transition-duration: 1s, 0.1s, 0.1s, 0.1s;
+  -moz-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -moz-transition-delay: 0;
+  -ms-transition-property: opacity, left, top, width;
+  -ms-transition-duration: 1s, 0.1s, 0.1s, 0.1s;
+  -ms-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -ms-transition-delay: 0;
+  -o-transition-property: opacity, left, top, width;
+  -o-transition-duration: 1s, 0.1s, 0.1s, 0.1s;
+  -o-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -o-transition-delay: 0;
+  -webkit-transition-property: opacity, left, top, width;
+          transition-property: opacity, left, top, width;
+  -webkit-transition-duration: 1s, 0.1s, 0.1s, 0.1s;
+          transition-duration: 1s, 0.1s, 0.1s, 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -transition-delay: 0;
 }
 
 .section-backgroundImage .post-featuredImage.is-loaded {
