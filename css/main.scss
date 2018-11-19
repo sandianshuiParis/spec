@@ -920,6 +920,10 @@ $baseurl: "{{ 'images' | relative_url }}";
 			}
 		}
 
+
+
+
+
 		.content {
 			@include padding(2em, 4em);
 			@include vendor('order', '2');
@@ -971,6 +975,18 @@ $baseurl: "{{ 'images' | relative_url }}";
 		@include breakpoint(small) {
 			.content {
 				@include padding(3em, 2em);
+			}
+		}
+		.image_only {
+			@include vendor('order', '1');
+			border-radius: 0;
+			width: 100%;
+			position: center;
+
+			img {
+				border-radius: 0;
+				width: 100%;
+				padding: 5%;
 			}
 		}
 	}
@@ -1166,7 +1182,7 @@ $baseurl: "{{ 'images' | relative_url }}";
 
 	.wrapper {
 		@include padding(6em, 0);
-
+		transparent
 		> .inner {
 			width: 60em;
 			margin: 0 auto;
@@ -1185,7 +1201,7 @@ $baseurl: "{{ 'images' | relative_url }}";
 		}
 
 		&.style1 {
-			@include wrapper(accent1);
+			@include wrapper(accent8);					
 		}
 
 		&.style2 {
@@ -1202,6 +1218,10 @@ $baseurl: "{{ 'images' | relative_url }}";
 
 		&.style5 {
 			@include wrapper(accent7);
+		}
+
+		&.style6 {
+			@include wrapper(accent8);			
 		}
 
 		@include breakpoint(medium) {
