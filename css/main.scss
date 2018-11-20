@@ -1558,6 +1558,12 @@ $baseurl: "{{ 'images' | relative_url }}";
 				display: none;
 			}
 		}
+
+		.center {
+		    margin: auto;
+		    width: 50%;
+		    padding: 10px;
+		}
 	}
 
 	body.is-loading {
