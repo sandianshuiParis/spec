@@ -7,8 +7,8 @@ description: |
   San Dian Shui (Trois Gouttes d’Eau)      
   Un club de lecture chinois pour les enfants  
   [WE CHAT](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
+owner: Sandianshui # or company name
+first_published: 2018 # if migrating another site, the year of your first publish
 email: your-email@domain.com
 baseurl: "/spec" # the subpath of your site, e.g. /blog
 url: ""
@@ -64,5 +64,3 @@ disqus:              disqus_shortname # get it on https://disqus.com/admin/
 markdown: kramdown
 #sass:
 #  style: compressed
-plugins:
-  - jekyll-responsive-image

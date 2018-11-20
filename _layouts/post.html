@@ -6,15 +6,13 @@ layout: page
 <article class="postWrapper">
   <section class="section--first is-darkBackgrounded u-table">
     <div class="section-backgroundImage">
-
       {% if page.image.feature %}       
-        <img class="post-featuredImage" src="{{ page.image.feature | prepend: site.baseurl_featured_img | absolute_url }}" style="
+        <img class="postimage" src="{{ page.image.feature | prepend: site.baseurl_featured_img | absolute_url }}" style="
         {% if page.image.topPosition %}
           top:{{ page.image.topPosition }};
         {% endif %}
         " alt="">
       {% endif %}
-
     </div>
     <div class="section-gradient
     {% if page.bgGradientOpacity == "darker" %}
