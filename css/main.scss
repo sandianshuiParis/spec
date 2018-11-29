@@ -921,9 +921,6 @@ $baseurl: "{{ 'images' | relative_url }}";
 		}
 
 
-
-
-
 		.content {
 			@include padding(2em, 4em);
 			@include vendor('order', '2');
@@ -977,6 +974,7 @@ $baseurl: "{{ 'images' | relative_url }}";
 				@include padding(3em, 2em);
 			}
 		}
+		
 		.image_only {
 			@include vendor('order', '1');
 			border-radius: 0;
