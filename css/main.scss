@@ -974,8 +974,9 @@ $baseurl: "{{ 'images' | relative_url }}";
 				@include padding(3em, 2em);
 			}
 		}
-		
-		.image_only {
+
+
+		.logo {
 			@include vendor('order', '1');
 			border-radius: 0;
 			width: 100%;
@@ -983,11 +984,28 @@ $baseurl: "{{ 'images' | relative_url }}";
 
 			img {
 				border-radius: 0;
-				width: 100%;
+				width: 30%;
 				padding: 5%;
+
 			}
 		}
 	}
+
+	.image_only {
+			@include vendor('order', '1');
+			border-radius: 0;
+			width: 50%;
+			position: center;
+
+			img {
+				border-radius: 0;
+				
+				padding: 5%;
+				max-width: 100%;
+    			max-height: 100%;
+			}
+	}
+
 
 /* Wrapper */
 
