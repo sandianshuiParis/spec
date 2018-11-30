@@ -976,35 +976,26 @@ $baseurl: "{{ 'images' | relative_url }}";
 		}
 
 
-		.logo {
-			@include vendor('order', '1');
-			border-radius: 0;
-			width: 100%;
-			position: center;
 
-			img {
-				border-radius: 0;
-				width: 30%;
-				padding: 5%;
-
-			}
-		}
 	}
+    
+        .logo{            
+            max-height: 120px;
+            float: left;
+            padding: 0px 70px;
+        }
 
-	.image_only {
-			@include vendor('order', '1');
-			border-radius: 0;
-			width: 50%;
-			position: center;
-
-			img {
-				border-radius: 0;
-				
-				padding: 5%;
-				max-width: 100%;
-    			max-height: 100%;
-			}
-	}
+        a.image {
+            &:visited {        
+                color: hotpink;        
+            }
+            img{
+                border-radius: 15%;
+                padding: 5%;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
 
 
 /* Wrapper */
