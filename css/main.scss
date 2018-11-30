@@ -980,9 +980,9 @@ $baseurl: "{{ 'images' | relative_url }}";
 	}
     
         .logo{            
-            max-height: 120px;
+            max-height: 80px;
             float: left;
-            padding: 0px 70px;
+            padding: 0px 10px;
         }
 
         a.image {
